@@ -1,20 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kontakt – Josef Umzugsservice</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Josef Umzugsservice</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-<header class="site-header"><div class="container"><h1 class="brand">Kontakt</h1><nav class="main-nav"><a href="index.html">Start</a><a href="leistungen.html">Leistungen</a><a href="preise.html">Preise</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></nav></div></header>
-<main class="container">
-  <h2>Kontaktformular</h2>
-  <form action="https://formspree.io/f/mzzpykny" method="POST">
-    <label>Name<br><input type="text" name="name" required></label><br><br>
-    <label>E-Mail<br><input type="email" name="email" required></label><br><br>
-    <label>Telefon<br><input type="text" name="telefon"></label><br><br>
-    <label>Nachricht<br><textarea name="nachricht" rows="5" required></textarea></label><br><br>
-    <button type="submit" class="btn">Senden</button>
-  </form>
-  <h3>Direktkontakt</h3>
-  <p>Telefon: 0157 00000000<brEmail: info@josef-umzugsservice.de</p>
-</main>
-<footer class="site-footer"><div class="container"><p>© 2025 Josef Umzugsservice</p></div></footer>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo">Josef Umzugsservice</a>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="preise.html">Preise</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero small">
+    <h1>Kontakt</h1>
+    <p>Wir sind jederzeit für Sie erreichbar</p>
+</section>
+
+<section class="kontakt-container">
+    <div class="kontakt-info">
+        <h2>So erreichen Sie uns</h2>
+        <p><strong>Adresse:</strong><br>Gottfried-Könzgen Str. 33<br>47051 Duisburg</p>
+
+        <p><strong>Telefon:</strong><br>
+            <a href="tel:01639564078">0163 956 4078</a>
+        </p>
+
+        <p><strong>E-Mail:</strong><br>
+            <a href="mailto:nrw365umzuge@hotmail.com">nrw365umzuge@hotmail.com</a>
+        </p>
+
+        <p><strong>Öffnungszeiten:</strong><br>
+            Mo–Sa: 08:00–20:00 Uhr<br>
+            So/Feiertage: nach Absprache
+        </p>
+    </div>
+
+    <div class="kontakt-form">
+        <h2>Kontaktformular</h2>
+
+        <form action="https://formspree.io/f/mvoejryo" method="POST">
+            <label>Name*</label>
+            <input type="text" name="name" required>
+
+            <label>E-Mail*</label>
+            <input type="email" name="email" required>
+
+            <label>Telefon</label>
+            <input type="tel" name="telefon">
+
+            <label>Nachricht*</label>
+            <textarea name="nachricht" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Josef Umzugsservice – Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="widerruf.html">Widerruf</a>
+    </div>
+</footer>
+
 </body>
 </html>
