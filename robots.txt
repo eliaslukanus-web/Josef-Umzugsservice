@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://josef-umzugsservice.de/sitemap.xml
