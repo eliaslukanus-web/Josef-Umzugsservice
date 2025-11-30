@@ -8,4 +8,4 @@ Diese Dateien sind bereit für GitHub Pages.
 3. Settings → Pages → Branch: main, Folder: / (root)
 4. Custom domain: josef-umzugsservice.de (falls gewünscht)
 
-Kontakt: info@josef-umzugsservice.de
+Kontakt: nrw365umzuge@hotmail.com 
