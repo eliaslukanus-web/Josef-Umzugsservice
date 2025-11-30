@@ -1,18 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kontakt – Josef Umzugsservice Duisburg</title>
-  <meta name="description" content="Kontaktieren Sie Josef Umzugsservice in Duisburg – schnelle Rückmeldung, WhatsApp-Service und kostenloses Angebot.">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="robots" content="index,follow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Josef Umzugsservice Duisburg</title>
+    <meta name="description" content="Kontaktieren Sie Josef Umzugsservice in Duisburg. Schnelle Rückmeldung, WhatsApp-Service und kostenloses Angebot.">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .contact-wrapper {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .contact-box, .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+            color: #1E293B;
+        }
+
+        h2 { margin-top: 0; color: #1E3A8A; }
+
+        .contact-box p { margin-bottom: 12px; line-height: 1.5; }
+        .contact-box a { color: #1E3A8A; font-weight: bold; }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 18px;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #1E3A8A;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        @media(max-width: 900px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<header class="site-header"><div class="container"><h1 class="brand">Josef Umzugsservice</h1><nav class="main-nav"><a href="index.html">Start</a><a href="leistungen.html">Leistungen</a><a href="preise.html">Preise</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></nav></div></header>
-<main class="container">
-  <h2>Kontakt</h2><p>Telefon: 0163 956 4078<br>Email: nrw365umzuge@hotmail.com</p>
-</main>
-<footer class="site-footer container"><p>© 2025 Josef Umzugsservice</p></footer>
+
+<header>
+    <nav>
+        <a href="index.html" class="logo">Josef Umzugsservice</a>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="leistungen.html">Leistungen</a></li>
+            <li><a href="preise.html">Preise</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="kontakt.html" class="active">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero small">
+    <h1>Kontakt</h1>
+    <p>Schnelle Rückmeldung – auch per WhatsApp</p>
+</section>
+
+<section class="contact-wrapper">
+
+    <!-- Kontaktinfos -->
+    <div class="contact-box">
+        <h2>So erreichen Sie uns</h2>
+
+        <p><strong>Adresse:</strong><br>
+            Gottfried-Könzgen Str. 33<br>
+            47051 Duisburg
+        </p>
+
+        <p><strong>Telefon:</strong><br>
+            <a href="tel:01639564078">0163 956 4078</a>
+        </p>
+
+        <p><strong>E-Mail:</strong><br>
+            <a href="mailto:nrw365umzuge@hotmail.com">nrw365umzuge@hotmail.com</a>
+        </p>
+
+        <p><strong>Öffnungszeiten:</strong><br>
+            Mo–Sa: 08:00 – 20:00 Uhr<br>
+            Sonntag: nach Absprache
+        </p>
+
+        <a class="whatsapp-btn" href="https://wa.me/491639564078" target="_blank">
+            📱 WhatsApp Nachricht senden
+        </a>
+
+        <iframe 
+            src="https://www.google.com/maps?q=Gottfried-K%C3%B6nzgen+Str.+33,+47051+Duisburg&output=embed"
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Kontaktformular -->
+    <div class="form-box">
+        <h2>Kontaktformular</h2>
+        <p>Füllen Sie das Formular aus – wir melden uns innerhalb weniger Minuten.</p>
+
+        <form action="https://formspree.io/f/mvoejryo" method="POST">
+            <label>Name*</label>
+            <input type="text" name="name" required>
+
+            <label>E-Mail*</label>
+            <input type="email" name="email" required>
+
+            <label>Telefon</label>
+            <input type="tel" name="telefon">
+
+            <label>Nachricht*</label>
+            <textarea name="nachricht" rows="5" required></textarea>
+
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2025 Josef Umzugsservice – Alle Rechte vorbehalten</p>
+    <div class="footer-links">
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="widerruf.html">Widerruf</a>
+    </div>
+</footer>
+
 </body>
 </html>
