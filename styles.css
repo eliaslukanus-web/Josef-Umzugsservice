@@ -1,23 +1,2 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #4CAF50;
-    color: white;
-}
+:root{--bg:#0f1724;--accent:#7c3aed;--muted:#9aa4b2;--card:#0b1220}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#e6eef6}a{color:var(--accent)}.container{max-width:1100px;margin:0 auto;padding:20px}.site-header{background:#0b1220;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.03)}.site-header .container{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;color:var(--accent)}.main-nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:600}.hero{padding:60px 20px;text-align:center}.hero h2{font-size:32px;margin:0 0 12px}.btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:24px}.card{background:var(--card);padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}.price-table{width:100%;border-collapse:collapse}.price-table th,.price-table td{padding:12px;border-bottom:1px solid rgba(255,255,255,0.04);text-align:left}.site-footer{background:#071023;padding:18px 0;margin-top:40px;color:var(--muted);text-align:center}
