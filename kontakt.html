@@ -5,7 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt – Josef Umzugsservice</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* PREMIUM KONTAKT DESIGN */
+        .kontakt-section {
+            max-width: 1200px;
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        .kontakt-box, .form-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+        }
+
+        .kontakt-box h2,
+        .form-box h2 {
+            margin-top: 0;
+            color: #1e3a8a;
+        }
+
+        .kontakt-box p {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .kontakt-box a {
+            color: #1e3a8a;
+            font-weight: bold;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #d4d4d4;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #1e3a8a;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        iframe {
+            width: 100%;
+            height: 250px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        /* Mobile */
+        @media(max-width: 900px) {
+            .kontakt-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
 <header>
@@ -23,13 +103,18 @@
 
 <section class="hero small">
     <h1>Kontakt</h1>
-    <p>Wir sind jederzeit für Sie erreichbar</p>
+    <p>Schnell & unkompliziert – wir antworten innerhalb weniger Minuten</p>
 </section>
 
-<section class="kontakt-container">
-    <div class="kontakt-info">
+<section class="kontakt-section">
+
+    <!-- KONTAKT-INFOS -->
+    <div class="kontakt-box">
         <h2>So erreichen Sie uns</h2>
-        <p><strong>Adresse:</strong><br>Gottfried-Könzgen Str. 33<br>47051 Duisburg</p>
+
+        <p><strong>Adresse:</strong><br>
+           Gottfried-Könzgen Str. 33<br>47051 Duisburg
+        </p>
 
         <p><strong>Telefon:</strong><br>
             <a href="tel:01639564078">0163 956 4078</a>
@@ -40,12 +125,24 @@
         </p>
 
         <p><strong>Öffnungszeiten:</strong><br>
-            Mo–Sa: 08:00–20:00 Uhr<br>
-            So/Feiertage: nach Absprache
+            Montag – Samstag: 08:00 – 20:00 Uhr<br>
+            Sonntag/Feiertage: nach Absprache
         </p>
+
+        <!-- WHATSAPP -->
+        <a class="whatsapp-btn" href="https://wa.me/491639564078" target="_blank">
+            📱 WhatsApp Nachricht senden
+        </a>
+
+        <!-- GOOGLE MAPS -->
+        <iframe 
+            src="https://www.google.com/maps?q=Gottfried-K%C3%B6nzgen+Str.+33,+47051+Duisburg&output=embed"
+            loading="lazy">
+        </iframe>
     </div>
 
-    <div class="kontakt-form">
+    <!-- FORMULAR -->
+    <div class="form-box">
         <h2>Kontaktformular</h2>
 
         <form action="https://formspree.io/f/mvoejryo" method="POST">
@@ -64,6 +161,7 @@
             <button type="submit">Nachricht senden</button>
         </form>
     </div>
+
 </section>
 
 <footer>
