@@ -1,33 +1,49 @@
-/* HEADER DESIGN */
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: #ffffff;
+    color: #173155;
+}
+
+/* --- HEADER --- */
 .site-header {
     background: #ffffff;
     border-bottom: 1px solid #e5e7eb;
+    width: 100%;
 }
 
 .header-inner {
-    max-width: 1100px;
+    max-width: 1150px;
     margin: 0 auto;
-    padding: 12px 20px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
 }
 
+/* Logo */
 .site-logo {
-    height: 60px;
-    object-fit: contain;
+    height: 55px;
+    width: auto;
 }
 
+/* Navigation */
 .main-nav {
     display: flex;
-    gap: 22px;
+    gap: 28px;
 }
 
 .navlink {
     color: #173155;
     text-decoration: none;
     font-weight: 600;
+    font-size: 16px;
 }
 
 .navlink:hover,
@@ -35,40 +51,44 @@
     color: #1E3A8A;
 }
 
+/* Telefonnummer & CTA */
 .header-cta {
     display: flex;
-    gap: 12px;
     align-items: center;
+    gap: 12px;
 }
 
 .phone {
-    background: rgba(217,85,30,0.08);
-    padding: 8px 12px;
+    background: rgba(217,85,30,0.15);
+    padding: 8px 14px;
     border-radius: 8px;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 16px;
     color: #d9551e;
     text-decoration: none;
 }
 
 .btn-small {
     background: #1E3A8A;
-    color: #fff;
-    padding: 8px 12px;
+    color: white;
+    padding: 8px 14px;
     border-radius: 8px;
-    text-decoration: none;
     font-weight: 700;
+    text-decoration: none;
 }
 
+/* --- MOBILE HEADER --- */
 .mobile-toggle {
     display: none;
-    background: transparent;
+    font-size: 28px;
+    background: none;
     border: none;
-    font-size: 26px;
 }
 
-/* Mobile */
+/* Handy Ansicht */
 @media (max-width: 900px) {
-    .main-nav {
+    .main-nav,
+    .header-cta {
         display: none;
     }
 
@@ -77,6 +97,107 @@
     }
 
     .site-logo {
-        height: 50px;
+        height: 48px;
     }
+
+    .header-inner {
+        padding: 14px;
+    }
+}
+
+/* --- HERO SECTION --- */
+.hero {
+    background: linear-gradient(135deg, #1E3A8A, #304b9b);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #ffffff;
+    color: #1E3A8A;
+    padding: 12px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 25px;
+}
+
+/* --- GENERELLE SECTIONS --- */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #1E3A8A;
+}
+
+/* --- BOXEN & GRIDS --- */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+/* Handy Ansicht */
+@media (max-width: 900px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- CTA BANNER --- */
+.cta-banner {
+    background: #1E3A8A;
+    color: white;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* --- FOOTER --- */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #173155;
+    color: white;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #ffffff;
+    margin-left: 12px;
+    text-decoration: none;
 }
