@@ -3,46 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Umzugsunternehmen Duisburg | Josef Umzugsservice – Schnell & zuverlässig</title>
-    <meta name="description" content="Ihr zuverlässiges Umzugsunternehmen aus Duisburg. Faire Preise, schnelle Termine, Express-Umzüge, Entrümpelung & Montage. Jetzt kostenloses Angebot sichern!">
+
+    <meta name="description" content="Josef Umzugsservice aus Duisburg – professionelle Umzüge, faire Preise, Express-Service, Entrümpelungen & Firmenumzüge. Jetzt kostenloses Angebot sichern!">
 
     <link rel="stylesheet" href="styles.css">
-</head>
 
+    <style>
+        /* ---------------- HEADER ---------------- */
+        .site-header {
+            background: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .site-logo {
+            height: 60px;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 24px;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #173155;
+            font-weight: 600;
+        }
+
+        .main-nav a:hover,
+        .main-nav .active {
+            color: #1E3A8A;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 12px;
+        }
+
+        .phone {
+            background: rgba(217,85,30,0.08);
+            padding: 8px 12px;
+            border-radius: 8px;
+            color: #d9551e;
+            font-weight: 800;
+            text-decoration: none;
+        }
+
+        .btn-small {
+            background: #1E3A8A;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .mobile-toggle {
+            display: none;
+            font-size: 28px;
+            border: none;
+            background: transparent;
+        }
+
+        /* MOBILE NAV */
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            background: #ffffff;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .mobile-menu a {
+            padding: 12px 0;
+            color: #1E3A8A;
+            text-decoration: none;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+        }
+
+        @media (max-width: 900px) {
+            .main-nav,
+            .header-cta {
+                display: none;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+        }
+
+        /* ---------------- HERO ---------------- */
+        .hero {
+            background: linear-gradient(135deg, #1E3A8A, #304b9b);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 25px;
+            background: white;
+            color: #1E3A8A;
+            padding: 14px 22px;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* ---------------- SECTIONS ---------------- */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 30px;
+            color: #1E3A8A;
+            margin-bottom: 20px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .feature-box {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 900px) {
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .cta-banner {
+            background: #1E3A8A;
+            padding: 40px 20px;
+            border-radius: 12px;
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 10px;
+            background: #f1f5f9;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #1E3A8A;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+
+</head>
 <body>
 
-<!-- ⭐⭐⭐ NEUER HEADER – KORREKT & MOBILFÄHIG ⭐⭐⭐ -->
-<header>
-  <div class="site-header">
-    <div class="container header-inner">
+<!-- HEADER -->
+<header class="site-header">
+    <div class="header-inner">
+        
+        <a href="index.html">
+            <img src="logo.png" class="site-logo" alt="Josef Umzugsservice Logo">
+        </a>
 
-      <!-- Logo -->
-      <a class="brand" href="index.html" aria-label="Josef Umzugsservice Startseite">
-        <img src="logo.png" alt="Josef Umzugsservice Logo" class="site-logo">
-      </a>
+        <nav class="main-nav">
+            <a class="active" href="index.html">Start</a>
+            <a href="leistungen.html">Leistungen</a>
+            <a href="preise.html">Preise</a>
+            <a href="ueber-uns.html">Über uns</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
 
-      <!-- Navigation -->
-      <nav class="main-nav" aria-label="Hauptnavigation">
-        <a class="navlink active" href="index.html">Start</a>
-        <a class="navlink" href="leistungen.html">Leistungen</a>
-        <a class="navlink" href="preise.html">Preise</a>
-        <a class="navlink" href="ueber-uns.html">Über uns</a>
-        <a class="navlink" href="kontakt.html">Kontakt</a>
-      </nav>
+        <div class="header-cta">
+            <a href="tel:01639564078" class="phone">📞 0163 956 4078</a>
+            <a href="kontakt.html" class="btn-small">Angebot</a>
+        </div>
 
-      <!-- Telefonnummer + Button -->
-      <div class="header-cta">
-        <a href="tel:01639564078" class="phone">0163 9564078</a>
-        <a href="kontakt.html" class="btn-small">Angebot</a>
-      </div>
-
-      <!-- Mobile Menü Button -->
-      <button class="mobile-toggle" aria-label="Menü öffnen">☰</button>
-
+        <button class="mobile-toggle">☰</button>
     </div>
-  </div>
 </header>
+
+<!-- MOBILE MENU -->
 <div class="mobile-menu">
     <a href="index.html">Start</a>
     <a href="leistungen.html">Leistungen</a>
@@ -55,74 +237,82 @@
 <section class="hero">
     <h1>Ihr zuverlässiger Umzugsservice in Duisburg & NRW</h1>
     <p>Professionelle Umzüge, faire Preise, Express-Service und starke Leistung – alles aus einer Hand.</p>
-    <a href="kontakt.html" class="btn-primary">Kostenloses Angebot anfordern</a>
+    <a class="btn-primary" href="kontakt.html">Kostenloses Angebot anfordern</a>
 </section>
 
-
-<!-- Vorteile -->
+<!-- VORTEILE -->
 <section class="container">
     <h2 class="section-title">Warum Josef Umzugsservice?</h2>
 
     <div class="feature-grid">
         <div class="feature-box">
             <h3>✔ Faire Preise</h3>
-            <p>Transparente Kosten ohne Überraschungen. Stunden- oder Festpreise möglich.</p>
+            <p>Transparente Kosten ohne Überraschungen.</p>
         </div>
+
         <div class="feature-box">
             <h3>✔ Express-Umzüge</h3>
-            <p>In dringenden Fällen oft noch am gleichen Tag verfügbar.</p>
+            <p>Oft sogar am gleichen Tag möglich.</p>
         </div>
+
         <div class="feature-box">
             <h3>✔ Professionelle Helfer</h3>
-            <p>Erfahrenes Team, sorgfältige Arbeit & moderner Transporter.</p>
+            <p>Erfahrenes Team & moderne Fahrzeuge.</p>
         </div>
     </div>
 </section>
 
-
-<!-- Leistungen -->
+<!-- LEISTUNGEN -->
 <section class="container">
     <h2 class="section-title">Unsere Hauptleistungen</h2>
 
     <div class="feature-grid">
         <div class="feature-box">
             <h3>Privatumzug</h3>
-            <p>Von der 1-Zimmer-Wohnung bis zum kompletten Haus – wir übernehmen alles.</p>
+            <p>Vom kleinen Umzug bis zum Komplett-Service.</p>
         </div>
+
         <div class="feature-box">
             <h3>Firmenumzug</h3>
-            <p>Schnelle, sichere & organisierte Unternehmensumzüge.</p>
+            <p>Schnelle & koordinierte Büroumzüge.</p>
         </div>
-        <div class="feature-box">
-            <h3>Entrümpelung & Entsorgung</h3>
-            <p>Saubere Räumungen zu Top-Preisen inklusive Abtransport.</p>
-        </div>
-    </div>
 
-    <div style="text-align:center; margin-top:30px;">
-        <a href="leistungen.html" class="btn-primary">Alle Leistungen ansehen</a>
+        <div class="feature-box">
+            <h3>Entrümpelung</h3>
+            <p>Saubere Entsorgung & besenreine Übergabe.</p>
+        </div>
     </div>
 </section>
 
-
-<!-- CTA Banner -->
+<!-- CTA -->
 <section class="container">
     <div class="cta-banner">
         <h2>Bereit für Ihren Umzug?</h2>
-        <p>Jetzt kostenloses Angebot anfragen – wir antworten in wenigen Minuten.</p>
-        <a class="btn-primary" href="kontakt.html">Jetzt Kontakt aufnehmen</a>
+        <p>Jetzt kostenloses Angebot in wenigen Minuten erhalten.</p>
+        <a href="kontakt.html" class="btn-primary">Jetzt Kontakt aufnehmen</a>
     </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer>
     <p>© 2025 Josef Umzugsservice – Alle Rechte vorbehalten</p>
-    <div class="footer-links">
+    <div>
         <a href="impressum.html">Impressum</a>
         <a href="datenschutz.html">Datenschutz</a>
     </div>
 </footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".mobile-toggle");
+    const nav = document.querySelector(".mobile-menu");
+
+    toggle.addEventListener("click", function () {
+        nav.classList.toggle("open");
+    });
+});
+</script>
 
 </body>
 </html>
