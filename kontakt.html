@@ -1,168 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt – Josef Umzugsservice Duisburg</title>
-    <meta name="description" content="Kontaktieren Sie Josef Umzugsservice in Duisburg. Schnelle Rückmeldung, WhatsApp-Service und kostenloses Angebot.">
-    <link rel="stylesheet" href="styles.css">
-
+    <title>Kontakt | Josef Umzugsservice</title>
+    <meta name="description" content="Jetzt Kontakt aufnehmen. Kostenloses Angebot in wenigen Minuten. Telefon, WhatsApp oder Formular.">
     <style>
-        .contact-wrapper {
-            max-width: 1200px;
-            margin: 40px auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            padding: 20px;
-        }
+        nav{display:flex;align-items:center;justify-content:space-between;padding:15px 20px;background:white;box-shadow:0 3px 10px rgba(0,0,0,0.1);}
+        nav img{height:60px;}
+        nav ul{display:flex;gap:20px;list-style:none;}
+        nav ul li a{text-decoration:none;color:#1E3A8A;font-weight:600;}
 
-        .contact-box, .form-box {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-            color: #1E293B;
-        }
+        .container{max-width:800px;margin:40px auto;padding:20px;}
+        h1{text-align:center;color:#1E3A8A;margin-bottom:20px;}
 
-        h2 { margin-top: 0; color: #1E3A8A; }
+        form{display:grid;gap:15px;}
+        input,textarea{padding:12px;border-radius:8px;border:1px solid #ccc;}
 
-        .contact-box p { margin-bottom: 12px; line-height: 1.5; }
-        .contact-box a { color: #1E3A8A; font-weight: bold; }
+        button{background:#1E3A8A;color:white;padding:14px;border:none;border-radius:10px;font-size:16px;cursor:pointer;}
 
-        .whatsapp-btn {
-            display: inline-block;
-            background: #25D366;
-            color: white;
-            padding: 12px 18px;
-            border-radius: 10px;
-            margin-top: 10px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            border-radius: 10px;
-            border: 1px solid #cbd5e1;
-            margin-bottom: 15px;
-        }
-
-        button {
-            background: #1E3A8A;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        iframe {
-            width: 100%;
-            height: 250px;
-            border-radius: 12px;
-            margin-top: 20px;
-            border: none;
-        }
-
-        @media(max-width: 900px) {
-            .contact-wrapper {
-                grid-template-columns: 1fr;
-            }
-        }
+        .whatsapp{display:block;margin-top:20px;text-align:center;font-weight:bold;color:#25D366;font-size:20px;}
     </style>
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <a href="index.html" class="logo">Josef Umzugsservice</a>
-        <ul>
-            <li><a href="index.html">Start</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="preise.html">Preise</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
-            <li><a href="kontakt.html" class="active">Kontakt</a></li>
-        </ul>
-    </nav>
-</header>
+<nav>
+    <a href="index.html"><img src="Josef_logo.png"></a>
+    <ul>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="leistungen.html">Leistungen</a></li>
+        <li><a href="preise.html">Preise</a></li>
+        <li><a href="ueber-uns.html">Über uns</a></li>
+        <li><a class="active" href="kontakt.html">Kontakt</a></li>
+    </ul>
+</nav>
 
-<section class="hero small">
+<div class="container">
     <h1>Kontakt</h1>
-    <p>Schnelle Rückmeldung – auch per WhatsApp</p>
-</section>
 
-<section class="contact-wrapper">
+    <p style="text-align:center;font-size:18px;">
+        Sie erreichen uns direkt unter:<br><br>
+        📞 <strong>0163 9564078</strong><br>
+        💬 <a class="whatsapp" href="https://wa.me/491639564078" target="_blank">WhatsApp Nachricht senden</a>
+    </p>
 
-    <!-- Kontaktinfos -->
-    <div class="contact-box">
-        <h2>So erreichen Sie uns</h2>
+    <form>
+        <input type="text" placeholder="Ihr Name" required>
+        <input type="email" placeholder="Ihre E-Mail" required>
+        <textarea rows="5" placeholder="Ihre Nachricht" required></textarea>
+        <button type="submit">Nachricht senden</button>
+    </form>
+</div>
 
-        <p><strong>Adresse:</strong><br>
-            Gottfried-Könzgen Str. 33<br>
-            47051 Duisburg
-        </p>
-
-        <p><strong>Telefon:</strong><br>
-            <a href="tel:01639564078">0163 956 4078</a>
-        </p>
-
-        <p><strong>E-Mail:</strong><br>
-            <a href="mailto:nrw365umzuge@hotmail.com">nrw365umzuge@hotmail.com</a>
-        </p>
-
-        <p><strong>Öffnungszeiten:</strong><br>
-            Mo–Sa: 08:00 – 20:00 Uhr<br>
-            Sonntag: nach Absprache
-        </p>
-
-        <a class="whatsapp-btn" href="https://wa.me/491639564078" target="_blank">
-            📱 WhatsApp Nachricht senden
-        </a>
-
-        <iframe 
-            src="https://www.google.com/maps?q=Gottfried-K%C3%B6nzgen+Str.+33,+47051+Duisburg&output=embed"
-            loading="lazy">
-        </iframe>
-    </div>
-
-    <!-- Kontaktformular -->
-    <div class="form-box">
-        <h2>Kontaktformular</h2>
-        <p>Füllen Sie das Formular aus – wir melden uns innerhalb weniger Minuten.</p>
-
-        <form action="https://formspree.io/f/mvoejryo" method="POST">
-            <label>Name*</label>
-            <input type="text" name="name" required>
-
-            <label>E-Mail*</label>
-            <input type="email" name="email" required>
-
-            <label>Telefon</label>
-            <input type="tel" name="telefon">
-
-            <label>Nachricht*</label>
-            <textarea name="nachricht" rows="5" required></textarea>
-
-            <button type="submit">Nachricht senden</button>
-        </form>
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2025 Josef Umzugsservice – Alle Rechte vorbehalten</p>
-    <div class="footer-links">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="agb.html">AGB</a>
-        <a href="widerruf.html">Widerruf</a>
-    </div>
-</footer>
+<footer><p>© 2025 Josef Umzugsservice</p></footer>
 
 </body>
 </html>
