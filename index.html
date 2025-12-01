@@ -86,18 +86,34 @@
 <body>
 
 <header>
-    <nav>
-        <a href="index.html" class="logo">
-            <img src="logo.png" alt="Josef Umzugsservice Logo" style="height: 55px;">
-        </a>
-        <ul>
-            <li><a class="active" href="index.html">Start</a></li>
-            <li><a href="leistungen.html">Leistungen</a></li>
-            <li><a href="preise.html">Preise</a></li>
-            <li><a href="ueber-uns.html">Über uns</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+  <div class="site-header">
+    <div class="container header-inner">
+
+      <!-- Logo -->
+      <a class="brand" href="index.html" aria-label="Josef Umzugsservice Startseite">
+        <img src="logo.png" alt="Josef Umzugsservice Logo" class="site-logo">
+      </a>
+
+      <!-- Navigation -->
+      <nav class="main-nav" aria-label="Hauptnavigation">
+        <a class="navlink active" href="index.html">Start</a>
+        <a class="navlink" href="leistungen.html">Leistungen</a>
+        <a class="navlink" href="preise.html">Preise</a>
+        <a class="navlink" href="ueber-uns.html">Über uns</a>
+        <a class="navlink" href="kontakt.html">Kontakt</a>
+      </nav>
+
+      <!-- Telefonnummer + Button -->
+      <div class="header-cta">
+        <a href="tel:01639564078" class="phone">0163 9564078</a>
+        <a href="kontakt.html" class="btn-small">Angebot</a>
+      </div>
+
+      <!-- Mobile Menü Button -->
+      <button class="mobile-toggle" aria-label="Menü öffnen">☰</button>
+
+    </div>
+  </div>
 </header>
 
 <!-- HERO -->
