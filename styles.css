@@ -1,2 +1,163 @@
-:root{--bg:#0f1724;--accent:#7c3aed;--muted:#9aa4b2;--card:#0b1220}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#e6eef6}a{color:var(--accent)}.container{max-width:1100px;margin:0 auto;padding:20px}.site-header{background:#0b1220;padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.03)}.site-header .container{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;color:var(--accent)}.main-nav a{margin-left:16px;color:var(--muted);text-decoration:none;font-weight:600}.hero{padding:60px 20px;text-align:center}.hero h2{font-size:32px;margin:0 0 12px}.btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:8px;text-decoration:none;font-weight:700}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:24px}.card{background:var(--card);padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}.price-table{width:100%;border-collapse:collapse}.price-table th,.price-table td{padding:12px;border-bottom:1px solid rgba(255,255,255,0.04);text-align:left}.site-footer{background:#071023;padding:18px 0;margin-top:40px;color:var(--muted);text-align:center}
+/* ============================
+   GLOBAL STYLES
+============================ */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Inter, Arial, sans-serif;
+    background: #ffffff;
+    color: #1E1E1E;
+}
+
+a {
+    text-decoration: none;
+    color: #1E3A8A;
+}
+
+/* ============================
+   HEADER + LOGO + NAV
+============================ */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 15px 0;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #1E3A8A;
+}
+
+/* Logo */
+.logo img {
+    height: 55px;
+}
+
+/* ============================
+   HERO SECTION
+============================ */
+.hero {
+    background: linear-gradient(135deg, #1E3A8A, #304b9b);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.btn-primary {
+    background: #ffffff;
+    color: #1E3A8A;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+/* ============================
+   CONTENT SECTIONS
+============================ */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #1E3A8A;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature-box {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.feature-box h3 {
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+/* ============================
+   CTA BANNER
+============================ */
+.cta-banner {
+    background: #1E3A8A;
+    padding: 40px 20px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    background: #f3f4f6;
+    padding: 20px 0;
+    text-align: center;
+    color: #444;
+    margin-top: 50px;
+}
+
+.footer-links a {
+    margin: 0 12px;
+    color: #1E3A8A;
+    font-weight: 600;
+}
+
+/* ============================
+   MOBILE NAV OPTIONALLY
+============================ */
+@media(max-width: 850px) {
+    nav ul {
+        display: none; /* später mobile menu */
+    }
+}
