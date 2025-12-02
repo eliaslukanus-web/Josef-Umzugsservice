@@ -29,10 +29,15 @@ body {
 
 /* Logo */
 .site-logo {
-    height: 60px;
-    width: auto;
+    height: auto;
+    width: 160px;   /* perfekte Größe für Desktop */
 }
 
+@media (max-width: 768px) {
+    .site-logo {
+        width: 130px;  /* perfekte Größe für Handy */
+    }
+}
 /* Navigation */
 .main-nav {
     display: flex;
