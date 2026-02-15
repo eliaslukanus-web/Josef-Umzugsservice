@@ -1,233 +1,57 @@
-/* --- RESET --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Inter', Arial, sans-serif;
-    background: #ffffff;
-    color: #173155;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f8fb;
+  color: #1a1a1a;
 }
 
-/* --- HEADER --- */
-.site-header {
-    background: #ffffff;
-    border-bottom: 1px solid #e5e7eb;
-    width: 100%;
+header {
+  background: #0d47a1;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.header-inner {
-    max-width: 1150px;
-    margin: 0 auto;
-    padding: 14px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
 }
 
-/* Logo */
-.site-logo {
-    height: auto;
-    width: 160px;   /* perfekte Größe für Desktop */
+nav a:hover {
+  text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-    .site-logo {
-        width: 130px;  /* perfekte Größe für Handy */
-    }
-}
-/* Navigation */
-.main-nav {
-    display: flex;
-    gap: 28px;
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.navlink {
-    color: #173155;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
+h1, h2 {
+  color: #0d47a1;
 }
 
-.navlink:hover,
-.navlink.active {
-    color: #1E3A8A;
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Telefonnummer & CTA */
-.header-cta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+button:hover {
+  background: #0d47a1;
 }
 
-.phone {
-    background: rgba(217,85,30,0.15);
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-weight: 700;
-    font-size: 16px;
-    color: #d9551e;
-    text-decoration: none;
-}
-
-.btn-small {
-    background: #1E3A8A;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 8px;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-/* --- MOBILE HEADER --- */
-.mobile-toggle {
-    display: none;
-    font-size: 28px;
-    background: none;
-    border: none;
-}
-
-/* Handy Ansicht */
-@media (max-width: 900px) {
-    .main-nav,
-    .header-cta {
-        display: none;
-    }
-
-    .mobile-toggle {
-        display: block;
-    }
-
-    .site-logo {
-        height: 48px;
-    }
-
-    .header-inner {
-        padding: 14px;
-    }
-}
-
-/* --- HERO SECTION --- */
-.hero {
-    background: linear-gradient(135deg, #1E3A8A, #304b9b);
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-}
-
-.hero h1 {
-    font-size: 36px;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    opacity: 0.95;
-}
-
-.btn-primary {
-    display: inline-block;
-    background: #ffffff;
-    color: #1E3A8A;
-    padding: 12px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: 25px;
-}
-
-/* --- GENERELLE SECTIONS --- */
-.container {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #1E3A8A;
-}
-
-/* --- BOXEN & GRIDS --- */
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-.feature-box {
-    background: white;
-    border-radius: 12px;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.feature-box h3 {
-    font-size: 20px;
-    color: #1E3A8A;
-    margin-bottom: 10px;
-}
-
-/* Handy Ansicht */
-@media (max-width: 900px) {
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* --- CTA BANNER --- */
-.cta-banner {
-    background: #1E3A8A;
-    color: white;
-    border-radius: 12px;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 50px;
-}
-
-/* --- FOOTER --- */
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    background: #173155;
-    color: white;
-    text-align: center;
-}
-
-.footer-links a {
-    color: #ffffff;
-    margin-left: 12px;
-    text-decoration: none;
-}
-/* --- MOBILE MENU --- */
-.mobile-menu {
-    display: none;
-    flex-direction: column;
-    background: #ffffff;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.mobile-menu a {
-    padding: 12px 0;
-    color: #173155;
-    text-decoration: none;
-    font-weight: 600;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.mobile-menu a:last-child {
-    border-bottom: none;
-}
-
-.mobile-menu.open {
-    display: flex;
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
 }
