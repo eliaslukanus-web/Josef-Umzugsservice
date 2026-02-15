@@ -140,4 +140,78 @@ button:hover {
     padding: 8px 12px;
   }
 
+}/* ===== HEADER FIX KOMPLETT ===== */
+
+.site-header {
+  background: #ffffff;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  padding: 10px 0;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f3c88;
+  font-size: 16px;
+}
+
+.main-nav a:hover {
+  color: #0d2c6b;
+}
+
+.header-cta {
+  display: flex;
+  align-items: center;
+}
+
+.header-cta .phone {
+  background: #1f3c88;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* MOBILE FIX */
+
+@media (max-width: 900px) {
+
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .main-nav {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  .header-cta {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
 }
