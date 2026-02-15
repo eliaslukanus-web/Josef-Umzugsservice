@@ -81,3 +81,63 @@ button:hover {
   }
 
 }
+/* ===== HEADER MODERN ===== */
+
+.site-header {
+  background: #ffffff;
+  padding: 15px 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 55px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f3c88;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #0d2c6b;
+}
+
+.header-cta .phone {
+  background: #1f3c88;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .main-nav {
+    display: none;
+  }
+
+  .header-cta .phone {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+}
