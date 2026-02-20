@@ -119,11 +119,26 @@ button:hover {
 
 @media (max-width: 768px) {
 
-  .header-inner {
+  .main-nav {
+    display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
+  section {
+    padding: 40px 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+  }
+
+}
   .main-nav {
     flex-direction: column;
     align-items: center;
