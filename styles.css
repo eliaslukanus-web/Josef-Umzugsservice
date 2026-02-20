@@ -122,7 +122,13 @@ button:hover {
   .main-nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
+  }
+
+  .header-inner {
+    flex-direction: column;
+    gap: 15px;
   }
 
   section {
@@ -136,12 +142,6 @@ button:hover {
   button {
     width: 100%;
     padding: 14px;
-  }
-
-}
-  .main-nav {
-    flex-direction: column;
-    align-items: center;
   }
 
 }
