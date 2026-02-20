@@ -81,31 +81,7 @@ button:hover {
   }
 
 }
-/* ===== SAUBERER HEADER ===== */
-
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.main-nav {
-  display: flex;
-  gap: 25px;
-}
-
-.main-nav a {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.header-cta {
-  display: flex;
-  align-items: center;
-}
-
+/* ===== HEADER CTA PHONE FIX ===== */
 .header-cta .phone {
   background: #0d47a1;
   color: white;
@@ -114,44 +90,50 @@ button:hover {
   text-decoration: none;
   font-weight: 600;
 }
+
+/* Burger auf Desktop verstecken */
+.mobile-toggle {
+  display: none;
+}
+
 /* ===== MOBILE FIX ===== */
 @media (max-width: 900px) {
 
-    /* Desktop Navigation ausblenden */
-    .main-nav,
-    .header-cta {
-        display: none;
-    }
+  /* Desktop Navigation ausblenden */
+  .main-nav,
+  .header-cta {
+    display: none;
+  }
 
-    /* Burger Button anzeigen */
-    .mobile-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 28px;
-        cursor: pointer;
-    }
+  /* Burger anzeigen */
+  .mobile-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
 
-    /* Mobile Menü verstecken */
-    .mobile-menu {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0;
-        background: #fff;
-    }
+  /* Mobile Menü */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    background: #ffffff;
+  }
 
-    /* Wenn offen */
-    .mobile-menu.open {
-        display: flex;
-    }
+  /* Wenn Menü offen */
+  .mobile-menu.open {
+    display: flex;
+  }
 
-    .mobile-menu a {
-        padding: 15px;
-        font-size: 18px;
-        text-decoration: none;
-        color: #1f4e8c;
-        font-weight: 600;
-    }
+  .mobile-menu a {
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #1f4e8c;
+    font-weight: 600;
+  }
 
 }
