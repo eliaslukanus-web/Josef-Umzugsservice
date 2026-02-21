@@ -106,14 +106,15 @@ button:hover {
   background: #0d47a1;
 }
 
-/* ===== MODERN MINIMAL HERO ===== */
+/* ===== PREMIUM HERO ===== */
 
 .hero {
   position: relative;
-  padding: 140px 20px;
+  padding: 160px 20px;
   text-align: center;
   color: white;
   background: url("umzug-hero.jpg") center/cover no-repeat;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -123,15 +124,32 @@ button:hover {
   background: rgba(0, 0, 0, 0.55);
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-size: cover;
+  animation: zoomHero 20s ease-in-out infinite alternate;
+  z-index: 0;
+  opacity: 0.3;
+}
+
+@keyframes zoomHero {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); }
+}
+
 .hero h1,
 .hero p,
-.hero .btn-primary {
+.hero .btn-primary,
+.trust-badges {
   position: relative;
   z-index: 2;
 }
 
 .hero h1 {
-  font-size: 46px;
+  font-size: 48px;
   margin-bottom: 20px;
   font-weight: 700;
 }
