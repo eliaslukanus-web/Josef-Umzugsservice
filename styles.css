@@ -312,3 +312,18 @@ footer a {
   font-weight: 600;
   gap: 20px;
 }
+/* ===== GOOGLE MAP ===== */
+
+.map-section {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8fafc;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 40px auto 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
