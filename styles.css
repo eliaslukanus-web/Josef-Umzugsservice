@@ -106,22 +106,21 @@ button:hover {
   background: #0d47a1;
 }
 
-/* ===== PREMIUM HERO ===== */
+/* ===== SERIÖSER PREMIUM HERO ===== */
 
 .hero {
   position: relative;
-  padding: 160px 20px;
+  padding: 150px 20px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   background: url("umzug-hero.jpg") center/cover no-repeat;
-  overflow: hidden;
 }
 
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero h1,
@@ -133,29 +132,23 @@ button:hover {
 }
 
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+  font-size: 44px;
   font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 .hero p {
-  font-size: 20px;
-  max-width: 750px;
+  font-size: 19px;
+  max-width: 700px;
   margin: 0 auto 35px;
+  line-height: 1.6;
 }
 
-.btn-primary {
-  background: #1976d2;
-  padding: 16px 34px;
-  border-radius: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s ease;
-}
-
-.btn-primary:hover {
-  background: #0d47a1;
+.trust-badges {
+  margin-top: 30px;
+  font-size: 15px;
+  opacity: 0.95;
 }
 /* Mobile Optimierung */
 @media (max-width: 768px) {
