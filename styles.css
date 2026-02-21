@@ -233,4 +233,23 @@ button:hover {
     font-weight: 600;
   }
 
+}/* ===== MODERN CARDS ===== */
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.feature-box {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
 }
