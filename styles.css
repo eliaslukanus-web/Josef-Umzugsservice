@@ -124,22 +124,6 @@ button:hover {
   background: rgba(0, 0, 0, 0.55);
 }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: inherit;
-  background-size: cover;
-  animation: zoomHero 20s ease-in-out infinite alternate;
-  z-index: 0;
-  opacity: 0.3;
-}
-
-@keyframes zoomHero {
-  from { transform: scale(1); }
-  to { transform: scale(1.1); }
-}
-
 .hero h1,
 .hero p,
 .hero .btn-primary,
