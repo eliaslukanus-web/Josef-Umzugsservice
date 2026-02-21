@@ -301,3 +301,14 @@ footer a {
   line-height: 1.7;
   color: #555;
 }
+/* ===== TRUST SECTION ===== */
+
+.trust-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  gap: 20px;
+}
