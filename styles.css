@@ -106,32 +106,50 @@ button:hover {
   background: #0d47a1;
 }
 
-/* HERO Bereich schöner machen */
+/* ===== MODERN MINIMAL HERO ===== */
+
 .hero {
+  position: relative;
+  padding: 140px 20px;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #f4f8fb, #e3f0ff);
+  color: white;
+  background: url("umzug-hero.jpg") center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero h1,
+.hero p,
+.hero .btn-primary {
+  position: relative;
+  z-index: 2;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 46px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 20px;
-  max-width: 700px;
-  margin: 0 auto 30px;
+  max-width: 750px;
+  margin: 0 auto 35px;
 }
 
 .btn-primary {
   background: #1976d2;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 8px;
-  text-decoration: none;
+  padding: 16px 34px;
+  border-radius: 10px;
   font-weight: 600;
+  text-decoration: none;
   display: inline-block;
+  transition: 0.3s ease;
 }
 
 .btn-primary:hover {
