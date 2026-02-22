@@ -353,38 +353,36 @@ footer a {
   }
 
 }
-/* ===== MOBILE CONTACT BAR ===== */
+/* ===== FLOATING CONTACT BUTTON ===== */
 
-.fixed-contact-bar {
+.floating-contact {
   display: none;
 }
 
 @media (max-width: 768px) {
 
-  .fixed-contact-bar {
+  .floating-contact {
     position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0d47a1;
+    border-radius: 40px;
     display: flex;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
     z-index: 9999;
   }
 
-  .fixed-contact-bar a {
-    flex: 1;
-    text-align: center;
-    padding: 16px 0;
-    font-weight: 600;
-    text-decoration: none;
+  .floating-contact a {
+    padding: 14px 22px;
     color: white;
-    font-size: 17px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
   }
 
-  .call-btn {
-    background: #0d47a1;
-  }
-
-  .whatsapp-btn {
+  .floating-contact a:last-child {
     background: #25D366;
   }
 
