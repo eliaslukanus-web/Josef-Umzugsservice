@@ -327,49 +327,41 @@ footer a {
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
-/* ===== FIXER MOBILE CALL BUTTON ===== */
+/* ===== PREMIUM MOBILE CALL BUTTON ===== */
 
 .premium-call {
-  display: none;
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 88%;
+  max-width: 420px;
+  z-index: 9999;
+  display: block;
 }
 
-@media (max-width: 768px) {
+.premium-call a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px;
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 60px;
+  box-shadow: 
+    0 10px 30px rgba(0,0,0,0.25),
+    0 0 15px rgba(21,101,192,0.4);
+  transition: all 0.3s ease;
+}
 
-  .premium-call {
-    position: fixed;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 88%;
-    max-width: 420px;
-    z-index: 9999;
-    display: block;
-  }
+.premium-call a:active {
+  transform: scale(0.97);
+}
 
-  .premium-call a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 18px;
-    background: linear-gradient(135deg, #0d47a1, #1565c0);
-    color: #fff;
-    font-size: 17px;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 60px;
-    box-shadow: 
-      0 10px 30px rgba(0,0,0,0.25),
-      0 0 15px rgba(21,101,192,0.4);
-    transition: all 0.3s ease;
-  }
-
-  .premium-call a:active {
-    transform: scale(0.97);
-  }
-
-  .premium-call .icon {
-    font-size: 20px;
-  }
-
+.premium-call .icon {
+  font-size: 20px;
 }
