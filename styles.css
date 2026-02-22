@@ -331,7 +331,7 @@ footer a {
 
 .premium-call {
   position: fixed;
-  bottom: 80px;
+  bottom: calc(20px + env(safe-area-inset-bottom));
   left: 50%;
   transform: translateX(-50%);
   width: 88%;
