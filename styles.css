@@ -369,7 +369,8 @@ footer a {
 body {
   padding-bottom: 120px;
 }
-/* Platz für festen Button unten */
-body {
-  padding-bottom: 120px;
+@media (min-width: 901px) {
+  .premium-call {
+    display: none;
+  }
 }
