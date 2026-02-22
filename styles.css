@@ -402,3 +402,14 @@ body {
   border: none;
   border-top: 1px solid #e5e7eb;
 }
+.seo-local {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.seo-local h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
