@@ -387,3 +387,33 @@ footer a {
   }
 
 }
+.mobile-fixed-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .mobile-fixed-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    display: block;
+    z-index: 9999;
+  }
+
+  .mobile-fixed-button a {
+    display: block;
+    text-align: center;
+    background: #0d47a1;
+    color: white;
+    padding: 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  }
+
+}
