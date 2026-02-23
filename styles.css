@@ -111,14 +111,14 @@ button:hover {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh; /* neue stabile Mobile-Höhe */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 20px 120px 20px; /* unten Platz für Call-Button */
-  box-sizing: border-box;
   color: #fff;
+  padding: 100px 20px 140px 20px; /* oben & unten Luft */
+  box-sizing: border-box;
 }
 
 .hero-content {
