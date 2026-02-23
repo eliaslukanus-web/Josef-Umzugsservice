@@ -110,48 +110,45 @@ button:hover {
 
 .hero {
   position: relative;
-  padding: 150px 20px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: #ffffff;
-  background: url("umzug-hero.jpg") center/cover no-repeat;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
-
-.hero h1,
-.hero p,
-.hero .btn-primary,
-.trust-badges {
-  position: relative;
-  z-index: 2;
+  color: #fff;
+  padding: 20px;
 }
 
 .hero-content {
-  background: rgba(0,0,0,0.45);
-  padding: 40px;
-  border-radius: 12px;
-  display: inline-block;
+  max-width: 600px;
 }
 
 .hero h1 {
-  font-size: 44px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  letter-spacing: 0.5px;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 15px;
 }
 
-.hero p {
-  font-size: 19px;
-  max-width: 700px;
-  margin: 0 auto 35px;
-  line-height: 1.6;
+.hero-sub {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
+.hero-info {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1565c0;
+  color: white;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+}
 .trust-badges {
   margin-top: 30px;
   font-size: 15px;
