@@ -120,7 +120,7 @@ button:hover {
   padding: 100px 20px 140px 20px; /* oben & unten Luft */
   box-sizing: border-box;
 
-  background-image: url("umzug-hero.png");
+  background-image: url("umzug-hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
