@@ -119,8 +119,12 @@ button:hover {
   color: #fff;
   padding: 100px 20px 140px 20px; /* oben & unten Luft */
   box-sizing: border-box;
-}
 
+  background-image: url("umzug-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .hero-content {
   max-width: 600px;
   margin: 0 auto;
