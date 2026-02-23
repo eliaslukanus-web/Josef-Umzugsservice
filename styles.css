@@ -109,16 +109,50 @@ button:hover {
 /* ===== SERIÖSER PREMIUM HERO ===== */
 
 
-/* ===.hero {
+.hero {
   position: relative;
-  min-height: 100svh; /* neue stabile Mobile-Höhe */
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  padding: 100px 20px 140px 20px; /* oben & unten Luft */
+  padding: 80px 20px 120px 20px; /* unten Platz für Call-Button */
   box-sizing: border-box;
+  color: #fff;
+}
+
+.hero-content {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hero-info {
+  font-size: 14px;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  background: #1565c0;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: 600;
+}
 }== HEADER CTA PHONE FIX ===== */
 .header-cta .phone {
   background: #0d47a1;
