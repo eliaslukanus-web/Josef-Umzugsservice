@@ -108,76 +108,18 @@ button:hover {
 
 /* ===== SERIÖSER PREMIUM HERO ===== */
 
-.hero {
+
+/* ===.hero {
   position: relative;
-  height: 90vh;
+  min-height: 100svh; /* neue stabile Mobile-Höhe */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  padding: 20px;
-}
-
-.hero-content {
-  max-width: 600px;
-}
-
-.hero h1 {
-  font-size: 32px;
-  line-height: 1.2;
-  margin-bottom: 15px;
-}
-
-.hero-sub {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.hero-info {
-  font-size: 14px;
-  opacity: 0.9;
-  margin-bottom: 25px;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #1565c0;
-  color: white;
-  text-decoration: none;
-  border-radius: 40px;
-  font-weight: 600;
-}
-.trust-badges {
-  margin-top: 30px;
-  font-size: 15px;
-  opacity: 0.95;
-}
-/* Mobile Optimierung */
-@media (max-width: 768px) {
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  section {
-    padding: 40px 15px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  button {
-    width: 100%;
-    padding: 14px;
-  }
-
-}
-/* ===== HEADER CTA PHONE FIX ===== */
+  padding: 100px 20px 140px 20px; /* oben & unten Luft */
+  box-sizing: border-box;
+}== HEADER CTA PHONE FIX ===== */
 .header-cta .phone {
   background: #0d47a1;
   color: white;
