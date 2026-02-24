@@ -163,7 +163,8 @@ button:hover {
   border-radius: 40px;
   font-weight: 600;
 }
-}== HEADER CTA PHONE FIX ===== */
+
+/* ===== HEADER CTA PHONE FIX ===== */
 .header-cta .phone {
   background: #0d47a1;
   color: white;
@@ -171,11 +172,6 @@ button:hover {
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-}
-
-/* Burger auf Desktop verstecken */
-.mobile-toggle {
-  display: none;
 }
 
 /* ===== MOBILE FIX ===== */
