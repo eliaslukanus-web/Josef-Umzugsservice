@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url><loc>https://josef-umzugsservice.de/</loc></url>
   <url><loc>https://josef-umzugsservice.de/index.html</loc></url>
   <url><loc>https://josef-umzugsservice.de/leistungen.html</loc></url>
@@ -8,4 +9,10 @@
   <url><loc>https://josef-umzugsservice.de/kontakt.html</loc></url>
   <url><loc>https://josef-umzugsservice.de/impressum.html</loc></url>
   <url><loc>https://josef-umzugsservice.de/datenschutz.html</loc></url>
+
+  <!-- Stadtseiten -->
+  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg.html</loc></url>
+  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-essen.html</loc></url>
+  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-oberhausen.html</loc></url>
+
 </urlset>
