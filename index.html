@@ -357,11 +357,15 @@ document.addEventListener("DOMContentLoaded", function () {
 </div>
 
 <script>
-const toggle = document.querySelector(".mobile-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".mobile-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-toggle.addEventListener("click", () => {
-  mobileMenu.classList.toggle("open");
+  if (toggle && mobileMenu) {
+    toggle.addEventListener("click", function() {
+      mobileMenu.classList.toggle("open");
+    });
+  }
 });
 </script>
 </body>
