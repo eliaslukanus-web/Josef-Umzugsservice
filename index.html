@@ -387,7 +387,14 @@ document.addEventListener("DOMContentLoaded", function() {
       overlay.classList.remove("open");
     });
   });
+const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
+const dropdown = document.querySelector(".mobile-dropdown");
 
+if (dropdownToggle && dropdown) {
+  dropdownToggle.addEventListener("click", function() {
+    dropdown.classList.toggle("open");
+  });
+}
 });
 </script>
 </body>
