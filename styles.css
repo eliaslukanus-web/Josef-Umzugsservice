@@ -152,7 +152,7 @@ h1, h2, h3 {
   z-index: 9999;   /* WICHTIG */
 }
 
-.mo.site-header {
+.site-header {
   z-index: 9998;
 }
 
@@ -160,7 +160,7 @@ h1, h2, h3 {
   position: relative;
   z-index: 1;
 }
-bile-menu.open {
+.mobile-menu.open {
   right: 0;
 }
 
