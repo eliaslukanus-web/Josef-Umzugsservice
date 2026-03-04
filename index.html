@@ -350,20 +350,29 @@ document.addEventListener("DOMContentLoaded", function() {
   const toggle = document.querySelector(".mobile-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".mobile-overlay");
+  const links = document.querySelectorAll(".mobile-menu a");
 
-  if (toggle && mobileMenu && overlay) {
+  if (!toggle || !mobileMenu || !overlay) return;
 
-    toggle.addEventListener("click", function() {
-      mobileMenu.classList.toggle("open");
-      overlay.classList.toggle("open");
-    });
+  // Menü öffnen
+  toggle.addEventListener("click", function() {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("open");
+  });
 
-    overlay.addEventListener("click", function() {
+  // Klick auf Overlay schließt Menü
+  overlay.addEventListener("click", function() {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("open");
+  });
+
+  // Klick auf Menü-Link schließt Menü
+  links.forEach(link => {
+    link.addEventListener("click", function() {
       mobileMenu.classList.remove("open");
       overlay.classList.remove("open");
     });
-
-  }
+  });
 
 });
 </script>
