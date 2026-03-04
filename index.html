@@ -346,14 +346,25 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+
   const toggle = document.querySelector(".mobile-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
+  const overlay = document.querySelector(".mobile-overlay");
 
-  if (toggle && mobileMenu) {
+  if (toggle && mobileMenu && overlay) {
+
     toggle.addEventListener("click", function() {
       mobileMenu.classList.toggle("open");
+      overlay.classList.toggle("open");
     });
+
+    overlay.addEventListener("click", function() {
+      mobileMenu.classList.remove("open");
+      overlay.classList.remove("open");
+    });
+
   }
+
 });
 </script>
 </body>
