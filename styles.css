@@ -474,6 +474,7 @@ h1, h2, h3 {
   margin:0 0 14px;
   display:flex;
   justify-content:center;
+  align-items:center;
   gap:12px;
   flex-wrap:wrap;
 }
@@ -482,10 +483,21 @@ h1, h2, h3 {
   color:#fff;
   text-decoration:none;
   font-weight:700;
+
+  /* verhindert Button-Style */
+  display:inline !important;
+  background:none !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
 }
 
 .footer-links a:hover{
   text-decoration:underline;
+}
+
+.footer-links .sep{
+  opacity:.7;
 }
 
 .footer-cities{
@@ -503,6 +515,7 @@ h1, h2, h3 {
   color:#fff;
   text-decoration:none;
   font-weight:700;
+
   display:inline !important;
   background:none !important;
   padding:0 !important;
