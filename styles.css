@@ -454,103 +454,64 @@ h1, h2, h3 {
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-
 /* =========================
-   FOOTER CLEAN STYLE
+   FOOTER (CLEAN + MOBILE OK)
 ========================= */
 
 .site-footer{
   background:#0d47a1;
-  color:white;
+  color:#fff;
   text-align:center;
   padding:40px 20px;
 }
 
 .footer-copy{
-  margin-bottom:15px;
+  margin:0 0 14px;
+  font-weight:600;
 }
 
 .footer-links{
-  margin-bottom:15px;
+  margin:0 0 14px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
 }
 
 .footer-links a{
-  color:white;
+  color:#fff;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
+}
+
+.footer-links a:hover{
+  text-decoration:underline;
 }
 
 .footer-cities{
-  margin-top:10px;
+  margin-top:8px;
   font-size:15px;
+  line-height:1.7;
+}
+
+.footer-cities span{
+  opacity:.95;
+  font-weight:600;
 }
 
 .footer-cities a{
-  color:white;
+  color:#fff;
   text-decoration:none;
-  font-weight:600;
+  font-weight:700;
+  display:inline !important;
+  background:none !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
 }
 
 .footer-cities a:hover{
   text-decoration:underline;
-}
-/* =========================
-FOOTER FIX
-========================= */
-
-.site-footer a{
-display:inline !important;
-background:none !important;
-padding:0 !important;
-border-radius:0 !important;
-box-shadow:none !important;
-width:auto !important;
-max-width:none !important;
-}
-
-/* Footer Layout */
-.site-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:40px 20px;
-}
-
-.footer-links{
-margin:15px 0;
-}
-
-.footer-links a{
-color:white;
-font-weight:600;
-text-decoration:none;
-}
-
-.footer-cities{
-margin-top:10px;
-line-height:1.7;
-}
-
-.footer-cities a{
-color:white;
-font-weight:600;
-text-decoration:none;
-}
-
-.footer-cities a:hover{
-text-decoration:underline;
-}
-/* MOBILE FIX – verhindert Button-Look */
-@media (max-width:900px){
-
-.footer-cities a{
-  display:inline;
-  background:none;
-  padding:0;
-  border-radius:0;
-  box-shadow:none;
-}
-
 }
 /* ================================================= */
 /* PREMIUM MOBILE CALL BUTTON */
@@ -588,9 +549,6 @@ text-decoration:underline;
   }
 }
 
-<p>
-Füllen Sie das Formular aus und wir melden uns innerhalb von 10 Minuten mit einem kostenlosen Angebot für Ihren Umzug.
-</p>
 /* ========================= */
 /* KONTAKTFORMULAR */
 /* ========================= */
