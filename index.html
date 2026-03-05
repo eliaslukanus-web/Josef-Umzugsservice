@@ -193,44 +193,55 @@
     <span class="icon">📞</span>
     Jetzt anrufen
   </a>
-</div>
 
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const toggle = document.querySelector(".mobile-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".mobile-overlay");
-  const links = document.querySelectorAll(".mobile-menu a");
 
-  if (toggle && mobileMenu && overlay) {
-    toggle.addEventListener("click", function() {
-      mobileMenu.classList.toggle("open");
-      overlay.classList.toggle("open");
-    });
+  const dropdown = document.querySelector(".mobile-dropdown");
+  const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
 
-    overlay.addEventListener("click", function() {
-      mobileMenu.classList.remove("open");
-      overlay.classList.remove("open");
-    });
+  if (!toggle || !mobileMenu || !overlay) return;
 
-    links.forEach(link => {
-      link.addEventListener("click", function() {
-        mobileMenu.classList.remove("open");
-        overlay.classList.remove("open");
-      });
-    });
+  function openMenu() {
+    mobileMenu.classList.add("open");
+    overlay.classList.add("open");
   }
 
-  const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
-  const dropdown = document.querySelector(".mobile-dropdown");
+  function closeMenu() {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("open");
+    // Dropdown auch schließen
+    if (dropdown) dropdown.classList.remove("open");
+  }
 
+  // Menü öffnen/schließen
+  toggle.addEventListener("click", function () {
+    const isOpen = mobileMenu.classList.contains("open");
+    if (isOpen) closeMenu();
+    else openMenu();
+  });
+
+  // Klick auf Overlay schließt Menü
+  overlay.addEventListener("click", closeMenu);
+
+  // Klick auf Links schließt Menü (aber NICHT, wenn es Dropdown Toggle ist)
+  mobileMenu.addEventListener("click", function (e) {
+    const link = e.target.closest("a");
+    if (!link) return;
+    closeMenu();
+  });
+
+  // Dropdown öffnen/schließen
   if (dropdownToggle && dropdown) {
-    dropdownToggle.addEventListener("click", function() {
+    dropdownToggle.addEventListener("click", function (e) {
+      e.stopPropagation(); // verhindert, dass das Menü sofort schließt
       dropdown.classList.toggle("open");
     });
   }
 });
 </script>
-
 </body>
 </html>
