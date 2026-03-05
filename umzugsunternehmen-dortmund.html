@@ -184,5 +184,56 @@ allowfullscreen="">
 </div>
 </footer>
 
+<!-- FIXER MOBILE ANRUF BUTTON -->
+<div class="premium-call">
+  <a href="tel:01639564078">
+    <span class="icon">📞</span>
+    Jetzt anrufen
+  </a>
+</div>
+
+<!-- ✅ HIER SCRIPT EINFÜGEN -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const toggle = document.querySelector(".mobile-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const overlay = document.querySelector(".mobile-overlay");
+  const links = document.querySelectorAll(".mobile-menu a");
+
+  if (!toggle || !mobileMenu || !overlay) return;
+
+  // Menü öffnen/schließen
+  toggle.addEventListener("click", function() {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("open");
+  });
+
+  // Klick auf Overlay schließt
+  overlay.addEventListener("click", function() {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("open");
+  });
+
+  // Klick auf Link schließt
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      mobileMenu.classList.remove("open");
+      overlay.classList.remove("open");
+    });
+  });
+
+  // Städte Dropdown im Mobile Menü
+  const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
+  const dropdown = document.querySelector(".mobile-dropdown");
+
+  if (dropdownToggle && dropdown) {
+    dropdownToggle.addEventListener("click", function(e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+    });
+  }
+});
+</script>
+
 </body>
 </html>
