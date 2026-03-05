@@ -456,63 +456,56 @@ h1, h2, h3 {
 
 
 /* =========================
-   FOOTER (FIXED + CLEAN)
+   FOOTER CLEAN STYLE
 ========================= */
+
 .site-footer{
   background:#0d47a1;
-  color:#fff;
+  color:white;
   text-align:center;
   padding:40px 20px;
 }
 
-/* Reset: egal welche Button-Styles irgendwo auf a liegen */
-.site-footer a{
-  background: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  padding: 0 !important;
-  display: inline !important;
-  color: #fff !important;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.site-footer a:hover{
-  text-decoration: underline;
-}
-
 .footer-copy{
-  margin:0 0 12px;
-  opacity:0.95;
+  margin-bottom:15px;
 }
 
 .footer-links{
-  margin: 0 0 14px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  flex-wrap:wrap;
+  margin-bottom:15px;
 }
 
-.footer-links .sep{
-  opacity:0.8;
+.footer-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
 }
 
 .footer-cities{
-  font-size:14px;
-  opacity:0.95;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  gap:8px;
-  line-height:1.6;
+  margin-top:10px;
+  font-size:15px;
 }
 
-.footer-cities span{
-  opacity:0.9;
-  font-weight:500;
+.footer-cities a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.footer-cities a:hover{
+  text-decoration:underline;
+}
+
+/* MOBILE FIX – verhindert Button-Look */
+@media (max-width:900px){
+
+.footer-cities a{
+  display:inline;
+  background:none;
+  padding:0;
+  border-radius:0;
+  box-shadow:none;
+}
+
 }
 /* ================================================= */
 /* PREMIUM MOBILE CALL BUTTON */
