@@ -461,13 +461,17 @@ h1, h2, h3 {
 .footer-staedte{
 margin-top:20px;
 font-size:14px;
-opacity:0.9;
+text-align:center;
 }
 
 .footer-staedte a{
+background:none !important;
+display:inline !important;
+padding:0 !important;
+border-radius:0 !important;
 color:#ffffff;
 text-decoration:none;
-margin:0 4px;
+font-weight:500;
 }
 
 .footer-staedte a:hover{
