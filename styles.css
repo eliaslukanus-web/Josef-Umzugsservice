@@ -506,3 +506,45 @@ footer a {
     display: none;
   }
 }
+
+<p>
+Füllen Sie das Formular aus und wir melden uns innerhalb von 10 Minuten mit einem kostenlosen Angebot für Ihren Umzug.
+</p>
+/* ========================= */
+/* KONTAKTFORMULAR */
+/* ========================= */
+
+.kontakt-form{
+max-width:600px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+text-align:left;
+}
+
+.form-group label{
+font-weight:600;
+margin-bottom:5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:15px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+outline:none;
+border-color:#1976d2;
+}
