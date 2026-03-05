@@ -494,7 +494,52 @@ h1, h2, h3 {
 .footer-cities a:hover{
   text-decoration:underline;
 }
+/* =========================
+FOOTER FIX
+========================= */
 
+.site-footer a{
+display:inline !important;
+background:none !important;
+padding:0 !important;
+border-radius:0 !important;
+box-shadow:none !important;
+width:auto !important;
+max-width:none !important;
+}
+
+/* Footer Layout */
+.site-footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.footer-links{
+margin:15px 0;
+}
+
+.footer-links a{
+color:white;
+font-weight:600;
+text-decoration:none;
+}
+
+.footer-cities{
+margin-top:10px;
+line-height:1.7;
+}
+
+.footer-cities a{
+color:white;
+font-weight:600;
+text-decoration:none;
+}
+
+.footer-cities a:hover{
+text-decoration:underline;
+}
 /* MOBILE FIX – verhindert Button-Look */
 @media (max-width:900px){
 
