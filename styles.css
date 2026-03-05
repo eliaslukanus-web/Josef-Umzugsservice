@@ -458,17 +458,20 @@ h1, h2, h3 {
 /* FOOTER */
 /* ================================================= */
 
-footer {
-  background: #0d47a1;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
+.footer-staedte{
+margin-top:20px;
+font-size:14px;
+opacity:0.9;
 }
 
-footer a {
-  color: #ffffff;
-  margin: 0 10px;
-  text-decoration: none;
+.footer-staedte a{
+color:#ffffff;
+text-decoration:none;
+margin:0 4px;
+}
+
+.footer-staedte a:hover{
+text-decoration:underline;
 }
 
 /* ================================================= */
