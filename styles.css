@@ -591,3 +591,16 @@ font-size:15px;
 outline:none;
 border-color:#1976d2;
 }
+
+/* Fix Startseite Mobil Städte Buttons */
+@media (max-width:900px){
+
+.seo-area a{
+display:inline !important;
+background:none !important;
+padding:0 !important;
+border-radius:0 !important;
+box-shadow:none !important;
+}
+
+}
