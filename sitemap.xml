@@ -1,28 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url><loc>https://josef-umzugsservice.de/</loc></url>
-  <url><loc>https://josef-umzugsservice.de/index.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/leistungen.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/preise.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/ueber-uns.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/kontakt.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/impressum.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/datenschutz.html</loc></url>
+  <!-- Hauptseiten -->
+  <url>
+    <loc>https://josef-umzugsservice.de/</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/leistungen.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/preise.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/ueber-uns.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/kontakt.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/staedte.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/impressum.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/datenschutz.html</loc>
+  </url>
 
   <!-- Stadtseiten -->
-  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-essen.html</loc></url>
-  <url><loc>https://josef-umzugsservice.de/umzugsunternehmen-oberhausen.html</loc></url>
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg.html</loc>
+  </url>
 
-<url><loc>https://josef-umzugsservice.de/umzugsunternehmen-muelheim.html</loc></url>
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-dortmund</loc>
-</url>
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-essen.html</loc>
+  </url>
 
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-gelsenkirchen.html</loc>
-</url>
-<url><loc>https://josef-umzugsservice.de/staedte.html</loc></url>
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-oberhausen.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-muelheim.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-bochum.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-gelsenkirchen.html</loc>
+  </url>
+
+  <url>
+    <loc>https://josef-umzugsservice.de/umzugsunternehmen-dortmund.html</loc>
+  </url>
 
 </urlset>
