@@ -279,8 +279,6 @@ Jetzt anrufen
     <span class="icon">📞</span>
     Jetzt anrufen
   </a>
-</div>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const toggle = document.querySelector(".mobile-toggle");
@@ -296,13 +294,13 @@ document.addEventListener("DOMContentLoaded", function() {
     overlay.classList.toggle("open");
   });
 
-  // Klick auf Overlay schließt
+  // Klick auf Overlay schließt Menü
   overlay.addEventListener("click", function() {
     mobileMenu.classList.remove("open");
     overlay.classList.remove("open");
   });
 
-  // Klick auf Link schließt
+  // Klick auf Link schließt Menü
   links.forEach(link => {
     link.addEventListener("click", function() {
       mobileMenu.classList.remove("open");
@@ -310,13 +308,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // Städte Dropdown im Mobile Menü
+  // Mobile Städte Dropdown
   const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
   const dropdown = document.querySelector(".mobile-dropdown");
 
   if (dropdownToggle && dropdown) {
     dropdownToggle.addEventListener("click", function(e) {
-      e.stopPropagation();
+      e.preventDefault();
       dropdown.classList.toggle("open");
     });
   }
