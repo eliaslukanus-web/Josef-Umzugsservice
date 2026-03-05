@@ -454,30 +454,66 @@ h1, h2, h3 {
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
 
-/* ================================================= */
-/* FOOTER */
-/* ================================================= */
 
-.footer-staedte{
-margin-top:20px;
-font-size:14px;
-text-align:center;
+/* =========================
+   FOOTER (FIXED + CLEAN)
+========================= */
+.site-footer{
+  background:#0d47a1;
+  color:#fff;
+  text-align:center;
+  padding:40px 20px;
 }
 
-.footer-staedte a{
-background:none !important;
-display:inline !important;
-padding:0 !important;
-border-radius:0 !important;
-color:#ffffff;
-text-decoration:none;
-font-weight:500;
+/* Reset: egal welche Button-Styles irgendwo auf a liegen */
+.site-footer a{
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  display: inline !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-.footer-staedte a:hover{
-text-decoration:underline;
+.site-footer a:hover{
+  text-decoration: underline;
 }
 
+.footer-copy{
+  margin:0 0 12px;
+  opacity:0.95;
+}
+
+.footer-links{
+  margin: 0 0 14px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.footer-links .sep{
+  opacity:0.8;
+}
+
+.footer-cities{
+  font-size:14px;
+  opacity:0.95;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px;
+  line-height:1.6;
+}
+
+.footer-cities span{
+  opacity:0.9;
+  font-weight:500;
+}
 /* ================================================= */
 /* PREMIUM MOBILE CALL BUTTON */
 /* ================================================= */
