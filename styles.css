@@ -466,7 +466,7 @@ h1, h2, h3 {
 }
 
 /* =========================
-   FOOTER (CLEAN + MOBILE OK)
+   FOOTER PREMIUM
 ========================= */
 
 .site-footer{
@@ -486,53 +486,46 @@ h1, h2, h3 {
   text-decoration:underline;
 }
 
-.footer-copy{
-  margin:0 0 14px;
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+  max-width:1100px;
+  margin:0 auto 20px;
+  text-align:left;
+}
+
+.footer-column{
+  flex:1;
+  min-width:220px;
+}
+
+.footer-column h4{
+  margin:0 0 10px;
+  font-size:16px;
+  color:#fff;
+}
+
+.footer-column p{
+  margin:0;
+  font-size:14px;
+  line-height:1.6;
+  color:#fff;
+}
+
+.footer-column a{
+  display:block;
+  margin-bottom:8px;
+  font-size:14px;
   font-weight:600;
 }
 
-.footer-links{
-  margin:0 0 14px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  flex-wrap:wrap;
-}
-
-.footer-links a{
-  font-weight:700;
-  display:inline !important;
-  background:none !important;
-  padding:0 !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-}
-
-.footer-links .sep{
-  opacity:.7;
-}
-
-.footer-sitemap{
-  margin-bottom:14px;
-}
-
-.footer-sitemap a{
-  font-weight:700;
-}
-
-.footer-contact{
-  margin-bottom:14px;
-}
-
-.footer-contact a{
-  font-weight:700;
-}
-
 .footer-cities{
-  margin-top:8px;
+  margin:20px 0 14px;
+  text-align:center;
   font-size:15px;
-  line-height:1.7;
+  line-height:1.8;
 }
 
 .footer-cities span{
@@ -548,54 +541,21 @@ h1, h2, h3 {
   border-radius:0 !important;
   box-shadow:none !important;
 }
-.footer-container{
-  display:flex;
-  justify-content:space-between;
-  gap:30px;
-  flex-wrap:wrap;
-  margin-bottom:20px;
-}
 
-.footer-column{
-  flex:1;
-  min-width:200px;
-}
-
-.footer-column h4{
-  margin-bottom:10px;
-  font-size:16px;
-  color:#fff;
-}
-
-.footer-column p{
-  font-size:14px;
-  line-height:1.6;
-}
-
-.footer-column a{
-  display:block;
-  color:#fff;
-  text-decoration:none;
-  margin-bottom:6px;
+.footer-copy{
+  margin:0;
+  font-weight:600;
   font-size:14px;
 }
 
-.footer-column a:hover{
-  text-decoration:underline;
-}
+@media (max-width: 900px){
+  .footer-container{
+    text-align:center;
+  }
 
-.footer-cities{
-  margin:20px 0;
-  text-align:center;
-}
-
-.footer-cities a{
-  color:#fff;
-  text-decoration:none;
-}
-
-.footer-cities a:hover{
-  text-decoration:underline;
+  .footer-column{
+    min-width:100%;
+  }
 }
 /* ================================================= */
 /* PREMIUM MOBILE CALL BUTTON */
