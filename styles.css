@@ -669,3 +669,21 @@ font-size:17px;
 .sitemap-list a:hover{
 text-decoration:underline;
 }
+
+/* =========================
+WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn{
+  display:inline-block;
+  margin-top:15px;
+  padding:14px 22px;
+  background:#25D366;
+  color:#fff;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:800;
+}
+.whatsapp-btn:hover{
+  background:#1ebe5d;
+}
