@@ -548,6 +548,55 @@ h1, h2, h3 {
   border-radius:0 !important;
   box-shadow:none !important;
 }
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.footer-column{
+  flex:1;
+  min-width:200px;
+}
+
+.footer-column h4{
+  margin-bottom:10px;
+  font-size:16px;
+  color:#fff;
+}
+
+.footer-column p{
+  font-size:14px;
+  line-height:1.6;
+}
+
+.footer-column a{
+  display:block;
+  color:#fff;
+  text-decoration:none;
+  margin-bottom:6px;
+  font-size:14px;
+}
+
+.footer-column a:hover{
+  text-decoration:underline;
+}
+
+.footer-cities{
+  margin:20px 0;
+  text-align:center;
+}
+
+.footer-cities a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.footer-cities a:hover{
+  text-decoration:underline;
+}
 /* ================================================= */
 /* PREMIUM MOBILE CALL BUTTON */
 /* ================================================= */
