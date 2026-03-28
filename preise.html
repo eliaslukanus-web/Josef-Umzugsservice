@@ -227,67 +227,103 @@ Kostenloses Angebot anfordern
 
 
 <!-- FOOTER -->
+<footer class="site-footer">
 
-<footer>
+  <div class="footer-container">
 
-<p>© 2025 Josef Umzugsservice – Alle Rechte vorbehalten</p>
+    <div class="footer-column">
+      <h4>Josef Umzugsservice</h4>
+      <p>
+        Ihr zuverlässiges Umzugsunternehmen in Duisburg und NRW.
+        Wir stehen für faire Preise, schnelle Termine und professionelle Umzüge.
+      </p>
+    </div>
 
-<p>
-<a href="impressum.html">Impressum</a> |
-<a href="datenschutz.html">Datenschutz</a>
-</p>
+    <div class="footer-column">
+      <h4>Rechtliches</h4>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="seitenuebersicht.html">Seitenübersicht</a>
+    </div>
 
-<div class="footer-staedte">
+    <div class="footer-column">
+      <h4>Kontakt</h4>
+      <a href="tel:+491639564078">📞 0163 956 4078</a>
+      <a href="mailto:info@josef-umzugsservice.de">✉️ info@josef-umzugsservice.de</a>
+    </div>
 
-<p>
-Umzugsunternehmen in:
-<a href="umzugsunternehmen-duisburg.html">Duisburg</a> ·
-<a href="umzugsunternehmen-essen.html">Essen</a> ·
-<a href="umzugsunternehmen-oberhausen.html">Oberhausen</a> ·
-<a href="umzugsunternehmen-muelheim.html">Mülheim</a> ·
-<a href="umzugsunternehmen-bochum.html">Bochum</a> ·
-<a href="umzugsunternehmen-gelsenkirchen.html">Gelsenkirchen</a> ·
-<a href="umzugsunternehmen-dortmund.html">Dortmund</a>
-</p>
+  </div>
 
-</div>
+  <div class="footer-cities">
+    <span>Umzugsunternehmen in:</span>
+    <a href="umzugsunternehmen-duisburg.html">Duisburg</a> ·
+    <a href="umzugsunternehmen-essen.html">Essen</a> ·
+    <a href="umzugsunternehmen-oberhausen.html">Oberhausen</a> ·
+    <a href="umzugsunternehmen-muelheim.html">Mülheim</a> ·
+    <a href="umzugsunternehmen-bochum.html">Bochum</a> ·
+    <a href="umzugsunternehmen-gelsenkirchen.html">Gelsenkirchen</a> ·
+    <a href="umzugsunternehmen-dortmund.html">Dortmund</a>
+  </div>
+
+  <p class="footer-copy">
+    © 2025 Josef Umzugsservice – Alle Rechte vorbehalten
+  </p>
 
 </footer>
-<script>
 
-document.addEventListener("DOMContentLoaded", function(){
-
-const toggle = document.querySelector(".mobile-toggle");
-const mobileMenu = document.querySelector(".mobile-menu");
-const overlay = document.querySelector(".mobile-overlay");
-
-toggle.addEventListener("click", function(){
-mobileMenu.classList.toggle("open");
-overlay.classList.toggle("open");
-});
-
-overlay.addEventListener("click", function(){
-mobileMenu.classList.remove("open");
-overlay.classList.remove("open");
-});
-
-const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
-const dropdown = document.querySelector(".mobile-dropdown");
-
-dropdownToggle.addEventListener("click", function(){
-dropdown.classList.toggle("open");
-});
-
-});
-
-</script>
-
-
-<div class="premium-call">
-<a href="tel:01639564078">
-<span>📞</span> Jetzt anrufen
-</a>
+<!-- WHATSAPP FLOAT -->
+<div class="premium-whatsapp">
+  <a href="https://wa.me/491639564078?text=Hallo,%20ich%20ben%C3%B6tige%20ein%20Umzugsangebot">
+    💬 WhatsApp
+  </a>
 </div>
+
+<!-- MOBILE CALL BUTTON -->
+<div class="premium-call">
+  <a href="tel:01639564078">
+    <span class="icon">📞</span>
+    Jetzt anrufen
+  </a>
+</div>
+
+<!-- SCRIPT -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  const toggle = document.querySelector(".mobile-toggle");
+  const mobileMenu = document.querySelector(".mobile-menu");
+  const overlay = document.querySelector(".mobile-overlay");
+  const links = document.querySelectorAll(".mobile-menu a");
+  const mobileDropToggle = document.querySelector(".mobile-dropdown-toggle");
+  const mobileDropdown = document.querySelector(".mobile-dropdown");
+
+  if (!toggle || !mobileMenu || !overlay) return;
+
+  toggle.addEventListener("click", function() {
+    mobileMenu.classList.toggle("open");
+    overlay.classList.toggle("open");
+  });
+
+  overlay.addEventListener("click", function() {
+    mobileMenu.classList.remove("open");
+    overlay.classList.remove("open");
+  });
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      mobileMenu.classList.remove("open");
+      overlay.classList.remove("open");
+    });
+  });
+
+  if (mobileDropToggle && mobileDropdown) {
+    mobileDropToggle.addEventListener("click", function() {
+      mobileDropdown.classList.toggle("open");
+    });
+  }
+
+});
+</script>
 
 </body>
 </html>
