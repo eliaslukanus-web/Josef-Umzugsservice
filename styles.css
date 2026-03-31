@@ -729,3 +729,9 @@ WHATSAPP FLOAT BUTTON
     display:none;
   }
 }
+.all-cities{
+  display:block;
+  margin-top:10px;
+  font-weight:700;
+  color:#1e3a8a;
+}
