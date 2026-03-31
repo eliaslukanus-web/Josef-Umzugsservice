@@ -33,12 +33,12 @@
 <priority>0.8</priority>
 </url>
 
-
 <url>
 <loc>https://josef-umzugsservice.de/seitenuebersicht.html</loc>
-  <changefreq>yearly</changefreq>
-  <priority>0.4</priority>
+<changefreq>yearly</changefreq>
+<priority>0.4</priority>
 </url>
+
 <url>
 <loc>https://josef-umzugsservice.de/staedte.html</loc>
 <changefreq>monthly</changefreq>
@@ -58,7 +58,7 @@
 <priority>0.3</priority>
 </url>
 
-<!-- Stadtseiten -->
+<!-- Haupt Stadtseiten -->
 <url>
 <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg.html</loc>
 <changefreq>monthly</changefreq>
@@ -66,45 +66,9 @@
 </url>
 
 <url>
-<loc>https://josef-umzugsservice.de/umzugsun ternehmen-duisburg-meiderich.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-hamborn.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-rheinhausen.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-walsum.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-homberg.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
 <loc>https://josef-umzugsservice.de/umzugsunternehmen-essen.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.9</priority>
-</url>
-
-<url>
-<loc>https://josef-umzugsservice.de/moebeltransport-essen.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
 </url>
 
 <url>
@@ -137,9 +101,65 @@
 <priority>0.9</priority>
 </url>
 
+<!-- Neue Städte -->
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-ratingen.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-kamp-lintfort.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-moers.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+
+<!-- Duisburg Stadtteile -->
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-meiderich.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-hamborn.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-rheinhausen.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-walsum.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-homberg.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
 <!-- Service Seiten -->
 <url>
 <loc>https://josef-umzugsservice.de/moebeltransport-duisburg.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<url>
+<loc>https://josef-umzugsservice.de/moebeltransport-essen.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
@@ -157,10 +177,17 @@
 </url>
 
 <url>
-<loc>https://josef-umzugsservice.de/haushaltsaufloesung-essen.html</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
+<loc>https://josef-umzugsservice.de/haushaltsaufloesung-duisburg.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
 </url>
+
+<url>
+<loc>https://josef-umzugsservice.de/haushaltsaufloesung-essen.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+
 <url>
 <loc>https://josef-umzugsservice.de/seniorenumzug-duisburg.html</loc>
 <changefreq>monthly</changefreq>
@@ -174,25 +201,12 @@
 </url>
 
 <url>
-<loc>https://josef-umzugsservice.de/haushaltsaufloesung-duisburg.html</loc>
-<changefreq>monthly</changefreq>
-<priority>0.8</priority>
-</url>
-
-<url>
 <loc>https://josef-umzugsservice.de/umzugskosten-duisburg.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-ratingen.html</loc>
-  <priority>0.7</priority>
-</url>
-<url>
-  <loc>https://josef-umzugsservice.de/umzugsunternehmen-kamp-lintfort.html</loc>
-  <priority>0.7</priority>
-</url>
 
+<!-- Ratgeber -->
 <url>
 <loc>https://josef-umzugsservice.de/umzug-checkliste.html</loc>
 <changefreq>yearly</changefreq>
