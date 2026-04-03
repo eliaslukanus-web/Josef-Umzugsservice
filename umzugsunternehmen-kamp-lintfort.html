@@ -297,6 +297,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const toggle = document.querySelector(".mobile-toggle");
   const mobileMenu = document.querySelector(".mobile-menu");
   const overlay = document.querySelector(".mobile-overlay");
+  const links = document.querySelectorAll(".mobile-menu a");
+  const dropdownToggle = document.querySelector(".mobile-dropdown-toggle");
+  const dropdown = document.querySelector(".mobile-dropdown");
 
   if (!toggle || !mobileMenu || !overlay) return;
 
@@ -308,7 +311,23 @@ document.addEventListener("DOMContentLoaded", function() {
   overlay.addEventListener("click", function() {
     mobileMenu.classList.remove("open");
     overlay.classList.remove("open");
+    if (dropdown) dropdown.classList.remove("open");
   });
+
+  links.forEach(link => {
+    link.addEventListener("click", function() {
+      mobileMenu.classList.remove("open");
+      overlay.classList.remove("open");
+    });
+  });
+
+  if (dropdownToggle && dropdown) {
+    dropdownToggle.addEventListener("click", function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropdown.classList.toggle("open");
+    });
+  }
 
 });
 </script>
