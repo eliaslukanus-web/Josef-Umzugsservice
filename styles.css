@@ -776,3 +776,11 @@ WHATSAPP FLOAT BUTTON
   color: #ffffff !important;
   opacity: 1 !important;
 }
+@media (max-width: 900px){
+  body{
+    padding-bottom: 160px;
+  }
+}
+.premium-whatsapp{
+  bottom: calc(80px + env(safe-area-inset-bottom));
+}
