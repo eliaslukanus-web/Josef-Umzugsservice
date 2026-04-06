@@ -466,11 +466,11 @@ h1, h2, h3 {
 }
 
 /* =========================
-   FOOTER PREMIUM
+   FOOTER PREMIUM (OPTIMIERT)
 ========================= */
 
 .site-footer{
-  background:#0d47a1;
+  background: linear-gradient(135deg, #0d47a1, #1565c0);
   color:#fff;
   text-align:center;
   padding:40px 20px;
@@ -478,7 +478,7 @@ h1, h2, h3 {
 
 .site-footer a,
 .site-footer a:visited{
-  color:#fff;
+  color:#e3f2fd;
   text-decoration:none;
 }
 
@@ -503,15 +503,15 @@ h1, h2, h3 {
 
 .footer-column h4{
   margin:0 0 10px;
-  font-size:16px;
-  color:#fff;
+  font-size:17px;
+  color:#ffffff;
 }
 
 .footer-column p{
   margin:0;
   font-size:14px;
   line-height:1.6;
-  color:#fff;
+  color:#e3f2fd;
 }
 
 .footer-column a{
@@ -521,16 +521,20 @@ h1, h2, h3 {
   font-weight:600;
 }
 
+/* Städte Bereich schöner */
 .footer-cities{
-  margin:20px 0 14px;
+  margin:25px 0 15px;
   text-align:center;
-  font-size:15px;
+  font-size:14px;
   line-height:1.8;
+  color:#e3f2fd;
 }
 
 .footer-cities span{
-  opacity:.95;
-  font-weight:600;
+  display:block;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#ffffff;
 }
 
 .footer-cities a{
@@ -542,12 +546,18 @@ h1, h2, h3 {
   box-shadow:none !important;
 }
 
+/* WICHTIG: Copyright fix */
 .footer-copy{
-  margin:0;
-  font-weight:600;
-  font-size:14px;
+  margin-top:20px;
+  padding-top:15px;
+  border-top:1px solid rgba(255,255,255,0.2);
+  font-size:13px;
+  color:#ffffff !important;
+  opacity:1 !important;
+  font-weight:500;
 }
 
+/* Mobile */
 @media (max-width: 900px){
   .footer-container{
     text-align:center;
