@@ -150,9 +150,23 @@
   <changefreq>monthly</changefreq>
   <priority>0.7</priority>
 </url>
+<url>
+  <loc>https://josef-umzugsservice.de/umzugsunternehmen-wesel.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 
-<loc>https://josef-umzugsservice.de/umzugsunternehmen-wesel.html</loc>
-<loc>https://josef-umzugsservice.de/umzugsunternehmen-bocholt.html</loc>
+<url>
+  <loc>https://josef-umzugsservice.de/umzugsunternehmen-bocholt.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://josef-umzugsservice.de/umzugsunternehmen-rees.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 <!-- Duisburg Stadtteile -->
 <url>
 <loc>https://josef-umzugsservice.de/umzugsunternehmen-duisburg-meiderich.html</loc>
