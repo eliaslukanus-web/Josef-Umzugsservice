@@ -735,52 +735,26 @@ WHATSAPP FLOAT BUTTON
   color:#1e3a8a;
 }
 
-.hero-btn{
-  display:inline-block;
-  padding:16px 32px;
-  background:linear-gradient(135deg, #0d47a1, #1565c0);
-  color:#fff !important;
-  text-decoration:none;
-  border-radius:50px;
-  font-weight:800;
-  font-size:17px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.3);
-}
-
-.angebot-btn{
-  display:inline-block;
-  background:#1976d2;
-  color:#fff !important;
-  padding:12px 20px;
-  border-radius:10px;
-  text-decoration:none;
-  font-weight:900;
-}
-
-.whatsapp-btn{
-  display:inline-block;
-  margin-top:15px;
-  padding:14px 22px;
-  background:#25D366;
-  color:#fff !important;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:800;
-}
-
-.footer-copy{
-  color:#ffffff;
-  opacity:0.9;
-}
-.footer-copy {
-  color: #ffffff !important;
-  opacity: 1 !important;
-}
 @media (max-width: 900px){
   body{
     padding-bottom: 160px;
   }
-}
-.premium-whatsapp{
-  bottom: calc(80px + env(safe-area-inset-bottom));
+
+  .site-footer{
+    padding-bottom: 190px !important;
+  }
+
+  .footer-copy{
+    margin-bottom: 10px !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+  }
+
+  .premium-whatsapp{
+    bottom: calc(95px + env(safe-area-inset-bottom));
+  }
+
+  .premium-call{
+    bottom: calc(20px + env(safe-area-inset-bottom));
+  }
 }
