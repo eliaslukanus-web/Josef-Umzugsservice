@@ -758,3 +758,23 @@ WHATSAPP FLOAT BUTTON
     bottom: calc(20px + env(safe-area-inset-bottom));
   }
 }
+/* =========================
+   IMAGE SECTIONS
+========================= */
+
+.image-section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.image-section img{
+  width:100%;
+  height:auto;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+.image-section img:hover{
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
