@@ -890,3 +890,32 @@ WHATSAPP FLOAT BUTTON
   }
 
 }
+.split-content .card{
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
+}
+
+.split-content .card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+.split-content h2{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.split-content h3{
+  color: #0d47a1;
+  margin-bottom: 6px;
+}
+@media (min-width: 901px){
+  .split-image img{
+    height: 380px; /* statt 420 */
+  }
+}
+.split-section{
+  gap: 30px; /* statt 40 */
+}
