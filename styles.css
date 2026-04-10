@@ -778,3 +778,17 @@ WHATSAPP FLOAT BUTTON
   transform: scale(1.02);
   transition: 0.3s ease;
 }
+/* Desktop Optimierung für Bilder */
+@media (min-width: 900px){
+
+  .image-section{
+    max-width: 800px;
+    margin: 40px auto;
+  }
+
+  .image-section img{
+    max-height: 420px;
+    object-fit: cover;
+  }
+
+}
