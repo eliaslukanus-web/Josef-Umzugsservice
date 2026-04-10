@@ -792,3 +792,34 @@ WHATSAPP FLOAT BUTTON
   }
 
 }
+/* Split Layout */
+.split-section{
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.split-image{
+  flex: 1;
+}
+
+.split-image img{
+  width: 100%;
+  border-radius: 16px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.split-content{
+  flex: 1;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+  .split-section{
+    flex-direction: column;
+  }
+}
