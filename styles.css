@@ -798,7 +798,7 @@ WHATSAPP FLOAT BUTTON
 
 
 /* =========================
-   SPLIT LAYOUT
+   SPLIT LAYOUT (FINAL CLEAN)
 ========================= */
 
 .split-section{
@@ -807,6 +807,7 @@ WHATSAPP FLOAT BUTTON
   padding: 0 20px;
 }
 
+/* Bild */
 .split-image img{
   width: 100%;
   border-radius: 16px;
@@ -814,6 +815,7 @@ WHATSAPP FLOAT BUTTON
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Text */
 .split-content h2{
   font-size: 28px;
   margin-bottom: 16px;
@@ -824,13 +826,21 @@ WHATSAPP FLOAT BUTTON
   margin-bottom: 8px;
 }
 
+/* Karten */
 .split-content .card{
   background: #ffffff;
   border-radius: 14px;
   padding: 20px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: 0.2s ease;
 }
 
+.split-content .card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+/* DESKTOP */
 @media (min-width: 901px){
 
   .split-section{
@@ -846,7 +856,6 @@ WHATSAPP FLOAT BUTTON
 
   .split-image img{
     height: 100%;
-    min-height: 100%;
     object-fit: cover;
   }
 
@@ -856,8 +865,10 @@ WHATSAPP FLOAT BUTTON
     gap: 20px;
     margin-top: 20px;
   }
+
 }
 
+/* MOBILE */
 @media (max-width: 900px){
 
   .split-section{
@@ -871,28 +882,5 @@ WHATSAPP FLOAT BUTTON
   .split-image img{
     height: auto;
   }
-}
-/* Mobile */
-@media (max-width: 900px){
 
-  .split-section{
-    flex-direction: column;
-  }
-
-  .split-image{
-    margin-bottom: 25px;
-  }
-
-  .split-section{
-  align-items: stretch; /* GANZ WICHTIG */
-}
-
-.split-image{
-  display: flex;
-}
-
-.split-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
